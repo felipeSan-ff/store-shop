@@ -54,7 +54,7 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    max-width: 500px;
+    max-width: 450px;
     height: 600px;
     background-color: #FFFFFF;
     margin: 0 auto;
@@ -90,12 +90,26 @@ header {
 }
 
 .informations-email input {
+    background: #F8FAFC url('/assets/email.png') no-repeat 10px center;
+    background-size: 27px;
     width: 370px;
-    padding: 12px;
+    padding: 15px;
     border-radius: 6px;
     background-color: #F8FAFC;
     margin-bottom: 20px;
+}
 
+.informations-email input:not(:placeholder-shown) {
+    background-image: none;
+    padding-left: 12px; 
+    padding-top: 20px;
+    color: #94A3B8;
+}
+
+.informations-email input::placeholder {
+    padding-left: 30px;
+    font-size: 17px;
+    color: #94A3B8;
 }
 
 .informations-password label {
@@ -106,12 +120,29 @@ header {
 }
 
 .informations-password input {
+    background: #F8FAFC url('/assets/padlock.png') no-repeat 10px center;
+    background-size: 27px;
     width: 370px;
-    padding: 12px;
+    padding: 15px;
     border-radius: 6px;
     background-color: #F8FAFC;
     margin-bottom: 5px;
 
+}
+
+
+
+.informations-password input:not(:placeholder-shown) {
+    background-image: none;
+    padding-left: 12px; 
+    padding-top: 20px;
+    color: #94A3B8;
+}
+
+.informations-password input::placeholder {
+    padding-left: 30px;
+    font-size: 17px;
+    color: #94A3B8;
 }
 
 .forgot-pass a {
