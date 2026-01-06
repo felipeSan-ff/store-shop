@@ -15,13 +15,28 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 5px;
+    margin: 0;
+    position: relative;
 
 }
 
+.header-store-shop h2{
+    font-size: 25px;
+    margin-right:900px;
 
-.header-options {
-    margin-right: 200px;
 }
+
+.img-logo {
+    
+    width: 28px;
+    height: 28px;
+    background-image: url('/assets/headphone.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-left: 30px;
+    
+}
+
 
 .header-options a{
     text-decoration: none;
@@ -30,13 +45,33 @@ header {
     margin: 10px;
 }
 
+.header-options {
+    position: absolute;
+    left: 260px;
+    margin-top: 6px;
+}
+
 .header-search input {
     padding: 10px;
     border-radius: 6px;
     background: #F6F7F8;
     border: none;
     width: 250px;
-    
+    background: #F8FAFC url('/assets/loupe.png') no-repeat 10px center;
+    background-size: 15px;
+}
+
+.header-search input:not(:placeholder-shown) {
+    background-image: none;
+    padding-left: 12px; 
+    padding-top: 10px;
+    color: #94A3B8;
+}
+
+.header-search input::placeholder {
+    padding-left: 30px;
+    font-size: 14px;
+    color: #94A3B8;
 }
 
 
@@ -45,10 +80,30 @@ header {
 }
 
 .header-profile a{
-    margin: 10px;
+    display: inline-block;          
+    width: 24px;
+    height: 24px;
+    margin: 0px;
     text-decoration: none;
+    background-image: url('/assets/cart.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    
 }
 
+.header-profile-2 a{
+    display: inline-block;         
+    width: 24px;
+    height: 24px;
+    margin: 10px;
+    text-decoration: none;
+    background-image: url('/assets/user.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+  
+    
+}
 
 .container {
     display: flex;  
@@ -65,6 +120,8 @@ header {
     margin-top: 100px;
  
 }
+
+
 
 .Welcome-back h2{
    font-size: 36px;
@@ -175,7 +232,12 @@ header {
 .continue {
     color: #94A3B8;
     margin-bottom: 20px;
+}
 
+.continue strong {
+    color: #ebedf0;
+    font-weight: 100;
+    
 }
 
 .acess-google-ios .google {
