@@ -144,32 +144,40 @@ header {
 .informations-email label{
     display: block;
     font-weight: 400;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 
 }
 
 .informations-email input {
-    background: #F8FAFC url('/assets/email.png') no-repeat 10px center;
+    background:  url('/assets/email.png') no-repeat 10px center;
     background-size: 27px;
-    width: 370px;
     padding: 15px;
+    width: 350px;
+    padding-left: 40px;
     border-radius: 6px;
     background-color: #F8FAFC;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
     border: 1px solid #cfd3d9;
+    margin-bottom: 10px;
 }
 
-.informations-email input:not(:placeholder-shown) {
-    background-image: none;
-    padding-left: 12px; 
-    padding-top: 20px;
-    color: #94A3B8;
-}
+// .informations-email input:not(:placeholder-shown) {
+//     background-image: none;
+//     padding-left: 12px; 
+//     padding-top: 20px;
+//     color: #94A3B8;
+// }
 
 .informations-email input::placeholder {
-    padding-left: 30px;
     font-size: 17px;
     color: #94A3B8;
+}
+
+.errorMessage-email {
+    color: red;
+    margin-bottom: 30px;
+    
+    
 }
 
 .informations-password label {
@@ -180,28 +188,35 @@ header {
 }
 
 .informations-password input {
-    background: #F8FAFC url('/assets/padlock.png') no-repeat 10px center;
+    background: url('/assets/padlock.png') no-repeat 10px center;
     background-size: 27px;
-    width: 370px;
     padding: 15px;
+    width: 350px;
+    padding-left: 40px;
     border-radius: 6px;
     background-color: #F8FAFC;
     margin-bottom: 5px;
     border: 1px solid #cfd3d9;
+    margin-bottom: 10px;
 
+}
+
+.errorMessage-password {
+    color: red;
+    margin-bottom: 30px;
 }
 
 
 
-.informations-password input:not(:placeholder-shown) {
-    background-image: none;
-    padding-left: 12px; 
-    padding-top: 20px;
-    color: #94A3B8;
-}
+// .informations-password input:not(:placeholder-shown) {
+//     background-image: none;
+//     padding-left: 12px; 
+//     padding-top: 20px;
+//     color: #94A3B8;
+// }
 
 .informations-password input::placeholder {
-    padding-left: 30px;
+    
     font-size: 17px;
     color: #94A3B8;
 }
@@ -228,6 +243,13 @@ header {
     border: none;
 
 }
+
+.button-sign button:hover {
+    background-color: #328fec;
+    
+}
+
+
 
 .continue {
     color: #94A3B8;
