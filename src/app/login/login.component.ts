@@ -14,6 +14,9 @@ export class LoginComponent {
   resultOnClickButton: string = '';
   errorMessage: string = '';
   errorMessaagePassword: string = '';
+  loginErrorMessage = '';
+  isLoading: boolean = false;
+
   successMessage: string = '';
 
 
@@ -39,10 +42,19 @@ export class LoginComponent {
 
     this.successMessage = 'Login successful!';
 
-    
+    this.isLoading = true;
 
-    this.router.navigate(['/home']);
+    setTimeout(() => {
 
+      if(this.email !== 'felipe@gmail.com' || this.password !== '123456') {
+        this.isLoading = false;
+        this.loginErrorMessage = 'Incorrect email or Password.';
+        return;
+      }
+
+      this.isLoading = false;
+      this.router.navigate(['/home']);
+    }, 2000);
   
 
 

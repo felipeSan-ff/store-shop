@@ -29,9 +29,13 @@
         <a href="">Forgot Password?</a>
     </div>
 
-   
+
+    <p class="login-error-message" *ngIf="loginErrorMessage">{{ loginErrorMessage }}</p>
+
+    
+
     <div class="button-sign">
-        <button (click)="onButtonClick()">Sign in <p *ngIf="successMessage">{{ successMessage }}</p></button>
+        <button (click)="onButtonClick()" [disabled]="isLoading">{{ isLoading ? 'Entering...' : 'Sign in' }}</button>
     </div>
 
     <div class="continue">
