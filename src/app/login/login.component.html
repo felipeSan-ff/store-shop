@@ -3,36 +3,6 @@
   rel="stylesheet"
 />
 
-
-<header >
-
-    <div class="img-logo"></div>
-
-    <div class="header-store-shop">
-        <h2>StoreShop</h2>
-    </div>
-
-    <div class="header-options">
-        <a href="">Shop</a>
-        <a href="">New arrivals</a>
-        <a href="">About</a>
-        <a href="">Contact</a>
-
-    </div>
-
-    <div class="header-search">
-        <input type="search" placeholder="Search...">
-    </div>
-
-    <div class="header-profile">
-        <a href=""></a>
-    </div>
-    <div class="header-profile-2">
-        <a href=""></a>
-    </div>
-
-</header>
-
 <div class="container">
     <div class="Welcome-back">
         <h2>Welcome back</h2>
@@ -60,9 +30,8 @@
     </div>
 
    
-
     <div class="button-sign">
-        <button (click)="onButtonClick()">Sign in</button>
+        <button (click)="onButtonClick()">Sign in <p *ngIf="successMessage">{{ successMessage }}</p></button>
     </div>
 
     <div class="continue">

@@ -8,101 +8,7 @@
   display: block;
   min-height: 100vh;
   background-color: #F6F7F8;
-}
-
-header {
-    background-color: #FFFFFF;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px;
-    margin: 0;
-    position: relative;
-
-}
-
-.header-store-shop h2{
-    font-size: 25px;
-    margin-right:900px;
-
-}
-
-.img-logo {
-    
-    width: 28px;
-    height: 28px;
-    background-image: url('/assets/headphone.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-    margin-left: 30px;
-    
-}
-
-
-.header-options a{
-    text-decoration: none;
-    color: black;
-    font-size: 15px;
-    margin: 10px;
-}
-
-.header-options {
-    position: absolute;
-    left: 260px;
-    margin-top: 6px;
-}
-
-.header-search input {
-    padding: 10px;
-    border-radius: 6px;
-    background: #F6F7F8;
-    border: none;
-    width: 250px;
-    background: #F8FAFC url('/assets/loupe.png') no-repeat 10px center;
-    background-size: 15px;
-}
-
-.header-search input:not(:placeholder-shown) {
-    background-image: none;
-    padding-left: 12px; 
-    padding-top: 10px;
-    color: #94A3B8;
-}
-
-.header-search input::placeholder {
-    padding-left: 30px;
-    font-size: 14px;
-    color: #94A3B8;
-}
-
-
-.header-profile {
-    margin: 10px;
-}
-
-.header-profile a{
-    display: inline-block;          
-    width: 24px;
-    height: 24px;
-    margin: 0px;
-    text-decoration: none;
-    background-image: url('/assets/cart.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-    
-}
-
-.header-profile-2 a{
-    display: inline-block;         
-    width: 24px;
-    height: 24px;
-    margin: 10px;
-    text-decoration: none;
-    background-image: url('/assets/user.png');
-    background-repeat: no-repeat;
-    background-size: contain;
-  
-    
+  padding:1px;
 }
 
 .container {
@@ -116,8 +22,8 @@ header {
     margin: 0 auto;
     padding: 30px;
     border-radius: 15px;
-    box-shadow: 0 20px 50px rgba(15, 23, 42, 0.09);
-    margin-top: 100px;
+    box-shadow: 0 30px 40px rgba(15, 23, 43, 0.15);
+    margin-top: 50px;
  
 }
 
@@ -228,6 +134,10 @@ header {
     color:  #197FE6;
     font-weight: 600;
     text-decoration: none;
+}
+
+.login-success {
+    color: #FFFFFF;
 }
 
 .button-sign button {

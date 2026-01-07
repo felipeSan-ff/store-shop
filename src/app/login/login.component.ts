@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
+
 
 @Component({
   selector: 'app-login',
@@ -12,6 +14,10 @@ export class LoginComponent {
   resultOnClickButton: string = '';
   errorMessage: string = '';
   errorMessaagePassword: string = '';
+  successMessage: string = '';
+
+
+  constructor(private router: Router) {}
 
   onButtonClick() {
 
@@ -30,6 +36,14 @@ export class LoginComponent {
     }
 
     this.errorMessaagePassword = '';
+
+    this.successMessage = 'Login successful!';
+
+    
+
+    this.router.navigate(['/home']);
+
+  
 
 
   }
